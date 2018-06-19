@@ -1,0 +1,86 @@
+﻿body {
+
+}
+
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.menu-link:hover {
+    color: white;
+    text-decoration: none;
+}
+.menu-link:link {
+    color: white;
+    text-decoration: none;
+}
+.menu-link:visited {
+    color: white;
+    text-decoration: none;
+}
+.menu-link:active {
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar-brand {
+    margin-left: 0;
+}
+
+.news-block {
+    border-left: 1px solid #e9ecef;
+}
+
+#news-form {
+
+}
+
+.news-input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+#news-text {
+    resize: vertical;
+    min-height: 200px;
+}
+
+.auth-title {
+    margin-bottom: 30px;
+}
+
+#signup-form .form-control,
+#signup-form .btn,
+#login-form .form-control,
+#login-form .btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.article-line {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.news-header {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.news-date {
+    text-align: right;
+}
+
+.regist {
+    color: forestgreen;
+}
+
+#need-an-account {
+    margin-top: 15px;
+}
+

@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-8">
+    <h2>Add news</h2>
+
+    <form action="~/Home/Index" method="post" id="news-form">
+        <input type="text" name="Title" class="news-input form-control" placeholder="Article title" id="news-title" />
+        <textarea type="text" name="Text" class="news-input form-control" placeholder="Write an article" id="news-text"></textarea>
+        <button type="submit" id="news-submit" class="news-input btn btn-success">Send</button>
+    </form>
+</div>
+<div class="col-md-4 news-block">
+    <h2>My News</h2>
+    <div class="news-output" id="news-output">
+        @foreach (var b in ViewBag.News)
+        {
+            <article class="article-line">
+                <header class="news-header">@b.Title</header>
+                <p>
+                    @b.Text
+                </p>
+                <div class="news-date">
+                    @b.Date
+                </div>
+            </article>
+        }
+    </div>
+</div>
+

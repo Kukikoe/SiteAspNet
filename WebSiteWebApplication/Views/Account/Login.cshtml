@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 col-md-offset-3 mx-auto">
+    <h2 class="auth-title">Log in</h2>
+    <form action="~/Account/Login" method="post" id="login-form">
+        <input type="text" name="Login" class="form-control" placeholder="Login" id="user-login" />
+        <input type="password" name="Password" class="form-control" placeholder="Password" id="user-pass" />
+        <button type="submit" id="login-submit" class="btn btn-warning">Submit</button>
+        <p id="need-an-account">Need an account? <a class="regist" href="/Account/Register">Register</a></p>
+        
+    </form>
+</div>
